@@ -15,4 +15,35 @@ H1 {
 p {
     color: #0e0370;
     font-size: 22px;
+    animation-name: moveX;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes moveX {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100px);   
+    }
+}
+
+.card {
+    margin: 0px;
+    border: 20px solid;
+    color: rgb(89 199 184);
+}
+
+.card img {
+width: 45%;
+height: 100%;
+border-radius: 10px;
+}
+
+.card video {
+    width: 45%;
+    height: 100%;
+    border-radius: 10px;
+    float: right;
 }
